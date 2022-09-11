@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>🦠 Mapa - Leyes</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://unpkg.com/css-pro-layout/dist/css/css-pro-layout.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+    
+    <script type="text/javascript" src="ca2.js"></script>
+    
+    
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="layout-container" class="layout has-sidebar">
+      <aside id="sidebar" class="sidebar break-point-md">
+        👓
+        <h2>Filtros</h2>
+
+        <div class="filter">
+          <span class="title">Estatáles</span>
+          <input
+            class="tgl tgl-flip"
+            id="cb1"
+            type="checkbox"
+            
+          />
+          <label
+            class="tgl-btn"
+            data-tg-off="Off"
+            data-tg-on="On"
+            for="cb1"
+          ></label>
+        </div>
+
+        <div class="filter">
+          <span class="title">Documentación clínica</span>
+          <input
+            class="tgl tgl-flip"
+            id="cb2"
+            type="checkbox"
+           
+          />
+          <label
+            class="tgl-btn"
+            data-tg-off="Off"
+            data-tg-on="On"
+            for="cb2"
+          ></label>
+        </div>
+
+        <div class="filter">
+          <span class="title">Consentimiento informado</span>
+          <input
+            class="tgl tgl-flip"
+            id="cb3"
+            type="checkbox"
+           
+          />
+          <label
+            class="tgl-btn"
+            data-tg-off="Off"
+            data-tg-on="On"
+            for="cb3"
+          ></label>
+        </div>
+
+        <div class="filter">
+          <span class="title">Fin de la vida</span>
+          <input
+            class="tgl tgl-flip"
+            id="cb4"
+            type="checkbox"
+            
+          />
+          <label
+            class="tgl-btn"
+            data-tg-off="Off"
+            data-tg-on="On"
+            for="cb4"
+          ></label>
+        </div>
+
+        <div class="filter">
+          <span class="title">General</span>
+          <input
+            class="tgl tgl-flip"
+            id="cb5"
+            type="checkbox"
+            
+          />
+          <label
+            class="tgl-btn"
+            data-tg-off="Off"
+            data-tg-on="On"
+            for="cb5"
+          ></label>
+        </div>
+
+        <div class="filter">
+          <span class="title">LGTBI+</span>
+          <input
+            class="tgl tgl-flip"
+            id="cb6"
+            type="checkbox"
+            
+          />
+          <label
+            class="tgl-btn"
+            data-tg-off="Off"
+            data-tg-on="On"
+            for="cb6"
+          ></label>
+        </div>
+
+        <button id="closebar">Aplicar filtros</button>
+      </aside>
+      <div id="overlay" class="overlay"></div>
+      <div class="layout">
+        <!-- <header class="header">
+          Header
+        </header> -->
+        <main class="content">
+          Aqui va el texto de explicacion
+
+          <div class="sidebar-toggler break-point-md">
+            <a href="#" class="btn" id="btn-toggle">Toggle</a>
+          </div>
+          <div id="map"></div>
+        </main>
+        <footer class="footer">Footer</footer>
+      </div>
+    </div>
+
+
+    <script type="text/javascript" src="estatal.js"></script>
+    <script type="text/javascript" src="clinica.js"></script>
+    <script type="text/javascript" src="finvida.js"></script>
+    <script type="text/javascript" src="consentimiento.js"></script>
+    <script type="text/javascript" src="general.js"></script>
+    <script type="text/javascript" src="lgtbi.js"></script>
+    <script  src="index.js"></script>
+
+  </body>
+</html>
